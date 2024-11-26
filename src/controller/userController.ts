@@ -61,7 +61,7 @@ const userController = {
         .cookie("token", token, {
           httpOnly: true,
           secure: true,
-          sameSite: "strict",
+          sameSite: "none",
           maxAge: 100 * 60 * 60 * 24,
         })
         .json({ success: "Successfully Signed Up" });
